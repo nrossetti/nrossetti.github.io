@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nicholas Rossetti</title>
+  <meta name="description" content="Personal website of Nicholas Rossetti.">
+  <meta name="author" content="Nicholas Rossetti">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css?v={random number/string}">
+
+  <link rel="icon" href="favicon.ico" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+<div class="row headerContent">
+  <a class="title" href=""><h1>Nicholas Rossetti</h1></a>
+  <a class="socialLink" href="https://www.linkedin.com/in/nicholas-rossetti-569479136/"><img src="images/linkedin.svg"></a>
+  <a class="socialLink" href="https://github.com/nrossetti"><img src="images/github.svg"></a>
+  <hr>
+</div>
+<div class="row">
+  <ul class="accordion" style="list-style-type: none">
+    <li>
+      <div class="contentHeader"><h2>About</h2></div>
+      <div id="about" class="contentPanel">
+        <p>My name is Nicholas Rossetti. I live in Dallas Texas and I am currently seeking an entry level engineering role. I Graduated from Texas Tech University with a Bachelors of Science in Computer Engineering.</p>
+        <p>In my free time I enjoy programming, mountain biking, playing video games and cooking. I use this website to host my personal projects and experience which I am working to expand on every day.</p>
+      </div>
+    </li>
+    <li>
+      <div class="contentHeader"><h2>Skills</h2></div>
+      <div id="skills" class="contentPanel">
+        <span class="filter-text" hidden="true">Filter</span> 
+        <span id="filter-categories">
+          <input type="radio" id="filter-all" class="filter-input" name="filter" checked=""><label for="filter-all" class="filter-label">All</label> 
+          <input type="radio" id="language" class="filter-input" name="filter"><label for="language" class="filter-label">Languages</label> 
+          <input type="radio" id="framework" class="filter-input" name="filter"><label for="framework" class="filter-label">Frameworks</label>
+          <input type="radio" id="frontEnd" class="filter-input" name="filter"><label for="frontEnd" class="filter-label">Front-end</label> 
+          <input type="radio" id="backEnd" class="filter-input" name="filter"><label for="backEnd" class="filter-label">Back-end</label> 
+          <input type="radio" id="hardware" class="filter-input" name="filter"><label for="hardware" class="filter-label">Hardware</label>
+          <input type="radio" id="tool" class="filter-input" name="filter"><label for="tool" class="filter-label">Tools</label>
+          <input type="radio" id="other" class="filter-input" name="filter"><label for="other" class="filter-label">Other</label> 
+        </span>
+        <div class="filter-wrap filtered">
+          <div class="filter-item selected"></div>
+          <div class="filter-item language"><b>C</b></div>
+          <div class="filter-item language"><b>C++</b></div>
+          <div class="filter-item backEnd"><b>MySql</b></div>
+          <div class="filter-item frontEnd"><b>HTML</b></div>
+          <div class="filter-item frontEnd"><b>JavaScript</b></div>
+          <div class="filter-item backEnd"><b>Node.js</b></div>
+          <div class="filter-item framework"><b>Cordova</b></div>
+          <div class="filter-item frontEnd"><b>CSS</b></div>
+          <div class="filter-item backEnd"><b>PHP</b></div>
+          <div class="filter-item language"><b>Python</b></div>
+          <div class="filter-item language"><b>Powershell</b></div>
+          <div class="filter-item language"><b>Verilog</b></div>
+          <div class="filter-item tool"><b>git</b></div>
+          <div class="filter-item tool"><b>EagleCAD</b></div>
+          <div class="filter-item tool"><b>LTspice</b></div>
+          <div class="filter-item other"><b>Windows</b></div>
+          <div class="filter-item other"><b>Linux</b></div>
+          <div class="filter-item backEnd"><b>Apache</b></div>
+          <div class="filter-item backEnd"><b>LAMP</b></div>
+          <div class="filter-item other"><b>MVC</b></div>
+          <div class="filter-item other"><b>Object Oriented Programing/Design</b></div>
+          <div class="filter-item other"><b>SDLC</b></div>
+          <div class="filter-item other"><b>Waterfall</b></div>
+          <div class="filter-item framework"><b>Yii2.0</b></div>
+          <div class="filter-item framework"><b>Bootstrap</b></div>
+          <div class="filter-item hardware"><b>PCB Design/Assembly/Testing</b></div>
+          <div class="filter-item hardware"><b>Circuit Analysis</b></div>
+          <div class="filter-item hardware"><b>Circuit Simulation</b></div>
+          <div id="filter-mask" class=""></div> <!-- mask is last -->
+        </div>
+    </li>  
+     <li>
+      <div class="contentHeader"><h2>Portfolio</h2></div>
+      <div id="portfolio" class="contentPanel">
+        <container class="u-full-width" style="text-align: center;">
+          <div class="portDIV">
+            <span style="font-size: 12pt;">Below are a few of my example projects</span>
+            <br>
+            <ul>
+              <li>
+                <div>Metronome</div>
+                <span class="title">A JS Metronome app built using the tone.js Audio library and NEXUS UI elements.<br><a class="socialLink" href="url">Try Me</a> | <a class="socialLink" href="url">Source</a></span>
+              </li>
+              <li>
+                <div>Text Reminder</div>
+                <span class="title">A python based application that utilizes the Twillo SMS API to send text reminders.<br><a class="socialLink" href="url">Try Me</a> | <a class="socialLink" href="url">Source</a></span>
+              </li>
+              <li>
+                <div>Maps API</div>
+                <span class="title">This is an application that does something cool with the google maps API.<br><a class="socialLink" href="url">Try Me</a> | <a class="socialLink" href="url">Source</a></span>
+              </li>
+               <li>
+                <div>Snake Clone</div>
+                <span class="title">A clone of the game snake coded entirley in vanilla JS<br><a class="socialLink" href="url">Try Me</a> | <a class="socialLink" href="url">Source</a></span>
+              </li>
+               <li>
+                <div>Drum Pad</div>
+                <span class="title">A BLE drum pad that interfaces with a mobile application to track and train players.<br><a class="socialLink" href="url">Try Me</a> | <a class="socialLink" href="url">Source</a></span>
+              </li>
+            </ul>
+          </div>
+          <!--
+          <h4>Work in progress . . . </h4>
+          <p>But for now, a bit of code on <a class="socialLink" href="https://github.com/nrossetti" target="_blank">Github</a> or <a class="socialLink" href="https://jsfiddle.net/user/nicholasjrossetti/fiddles/" target="_blank">JSfiddle</a></p>
+          <a class="socialLink" href="https://github.com/nrossetti" target="_blank">Github</a>
+          <img src="images/github.svg" style="width:50px;">
+          -->
+        </container>
+      </div>
+        <!--
+        <div>
+          <p><b>Web Application: </b>An example projects to showcase my web development skills that will utilize a LAMP stack to allow users to search a CMS type system. This is not live yet but soon! Feel free to email me for more details. </p>
+          <p><b>Consumer Device: </b>A passion project in my free time that consist of a smart connected device and a hybrid mobile application. The embedded device utilizes an ESP32 chip to send data over BLE to the software application which users can access cross platform (mobile/desktop) thanks to the Apache Cordova framework. Please contact for more information.</p>
+        </div>
+        -->
+    </li>   
+    <li>
+      <div class="contentHeader"><h2>Contact</h2></div>
+      <div id="contact" class="contentPanel">
+            <form action="https://formspree.io/nicholasjrossetti@gmail.com" method="POST">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="user@domain.com" name="replyto">
+
+              <label for="exampleEmailInput">Subject</label>
+              <input class="u-full-width" type="text" placeholder="hello world!" name="subject">
+
+              <label for="exampleMessage">Message</label>
+              <textarea class="u-full-width" placeholder="01100101 01100001 01110011 01110100 01100101 01110010 00100000 01100101 01100111 01100111 0001010" name="message"></textarea>
+
+              <input type="hidden" name="_next" value="//nrossetti.com/#"/>
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <input class="button-primary" type="submit" value="Submit">
+          </div>
+      </div>
+
+    </li>
+  </ul>
+</div> <!--row--> 
+
+</div><!-- content container -->
+
+</body>
+</html>
