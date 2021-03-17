@@ -13,6 +13,7 @@
   <link rel="icon" href="favicon.ico" />
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="svg-inject.min.js"></script>
   <script src="snake.js"></script>
 
 </head>
@@ -21,8 +22,10 @@
 <body class="snake" style = "text-align:center; background-color: #98ADEE; margin-top: 5%">
 	<text  style="font-size: 24px">PLAY THE CLASSIC GAME OF SNAKE ON A CLASSIC PIECE OF TECH,</br><span style="color: #183693">THE NOKIA 3310</span></br></text>
 	<text  style="font-size: 16px">PRESS SPACE TO BEGIN/RESTART. USE THE ARROW KEYS TO CONTROL THE SNAKES MOVEMENT.</text>
-	<div class="container">
-		<img width="25%" height="25%" src="nokia.svg">
+	<div class="container" style="width: 250px">
+		<img src="nokia.svg">
+		<canvas id="canvas" width="170%" height="120%" style="background-color: #FFFFFF; opacity: 50%; position: absolute;
+  top: 22%; left: 15.5%;"></canvas>
 	</div>
 </body>
 </html>
