@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="Simple snake game in vanilla JS">
   <meta name="author" content="Nicholas Rossetti">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="./../skeleton.css">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./../favicon.ico" />
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="svg-inject.min.js"></script>
-  <script src="snake.js"></script>
-
+  <!--<script src="./src/index.js"></script>-->
+  <script>
+    window.requestAnimationFrame = function () {
+      return window.requestAnimationFrame || window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame || window.msRequestAnimationFrame ||
+        window.oRequestAnimationFrame || function (f) { window.setTimeout(f, 1e3 / 60) }
+    }();
+  </script>
 </head>
 
+<body>
+  <div class="instructions">
+    <p>THE CLASSIC GAME OF SNAKE ON...</br><span style="color: #183693">THE NOKIA 3310</span></br>
+    ARROW KEYS->MOVE&nbsp&nbsp&nbspSPACE->PAUSE/PLAY&nbsp&nbsp&nbspR->RESTART</p>
+  </div>
+  <div class="container">
+    <div class="imgwrap">
+      <img src='./img/nokia.png' />
+      <canvas id="canvas" autofocus="autofocus"></canvas>
+      <div id="scoreboard">
+        <span id="score">000</span>
+        <span>SNAKE</span>
+        <span id="highScore">000</span>
+      </div>
+    </div>
+  </div>
+<script src="./bundle.js"></script>
+<script>
+//Start Snake Game
+  $(document).ready(function() {
+    snakeGame.start({
+      snakePixels    : 10,
+      snakeSize      : 4
+    });
+});
+</script>
 
-<body class="snake" style = "text-align:center; background-color: #98ADEE; margin-top: 5%">
-	<text  style="font-size: 24px">PLAY THE CLASSIC GAME OF SNAKE ON A CLASSIC PIECE OF TECH,</br><span style="color: #183693">THE NOKIA 3310</span></br></text>
-	<text  style="font-size: 16px">PRESS SPACE TO BEGIN/RESTART. USE THE ARROW KEYS TO CONTROL THE SNAKES MOVEMENT.</text>
-	<div class="container" style="width: 250px">
-		<img src="nokia.svg">
-		<canvas id="canvas" width="170%" height="120%" style="background-color: #FFFFFF; opacity: 50%; position: absolute;
-  top: 22%; left: 15.5%;"></canvas>
-	</div>
 </body>
 </html>
