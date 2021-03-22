@@ -129,21 +129,6 @@ body {
   */
   color: #222; }
 
-@font-face {
-  font-family: 'nokiafc22';
-  src: url('./snake/nokiafc22.woff2') format('woff2'),
-       url('./snake/nokiafc22.woff') format('woff'),
-       url('./snake/nokiafc22.ttf') format('truetype');
-}
-
-body.snake>text {
-  font-family: 'nokiafc22', Fallback, sans-serif;
-  text-align: center;
-  color: #4E1894;
-}
-
-
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
