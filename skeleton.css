@@ -415,7 +415,7 @@ there.
   border-radius: 10px;
   text-align: center;
   height:125px;
-  color:#999;
+  color:#666;
   font-weight: 800;
   font-size: 18pt;
 }
@@ -439,26 +439,31 @@ there.
   word-wrap: break-word;
 }
 
+
+.row.headerContent{
+  clear: both;
+  position: relative;
+}
+
 .row.headerContent a{
   color: black;
   text-decoration: none; /* no underline */
 }
 
-.row.headerContent hr{
-  position:relative;
-  bottom: 0;
+.row.headerContent #title{
+  position: absolute;
+  left: 0;
+  bottom:0px;
 }
 
-.row.headerContent .title h1{
-  display:inline;
-}
-
-.row.headerContent .socialLink{
-  float:right;
-  margin:2%;
+#socialCont{
+  position: absolute;
+  right: 0;
+  bottom:25px;
 }
 
 .socialLink{
+  margin-left: 10px;
   color: black;
   text-decoration: underline;
   display: inline;
@@ -467,10 +472,10 @@ there.
   width:25px;
 }
 a{
-  color: grey;
+  color: black;
 }
 a:hover{
-  color: black;
+  color: grey;
 }
 
 hr {
@@ -496,6 +501,13 @@ border-bottom: 1px solid #fff;
   margin-bottom:0;
 }
 
+.contentHeader a{
+  cursor: pointer;
+  color:#666;
+  margin-bottom:0;
+  text-decoration: none;
+}
+
 .contentPanel {
   display: none;
   overflow: hidden;
@@ -507,6 +519,8 @@ border-bottom: 1px solid #fff;
   color:black;
   /*text-shadow:  1px 1px #999;*/
 }
+
+
 
 #accordion li a{
   color: black;
@@ -553,7 +567,34 @@ position:fixed;opacity:0
   left: 0;
   text-align: center;
 }
+
+#avatar {
+  background-image: url('avatar.svg');
+  
+  /* make a square container */
+  width: 100px;
+  height: 100px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+
+  display: none;
+  margin:0;
+  margin-left:calc(50% - 25px);
+  position:relative;
 }
+
+#about > p{
+  margin-bottom:0;
+}
+
+
 
 /* Larger than mobile */
 @media (min-width: 400px) {
