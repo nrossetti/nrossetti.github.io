@@ -3,6 +3,12 @@ $(document).ready(function() {
      // for active header definition
      $('.contentHeader').removeClass('on');
      $(this).addClass('on');
+    if($(this).next("div").is("#about")) {
+      if($("#avatar").is(':visible'))
+        $("#avatar").fadeOut( "fast" );
+      else
+        $("#avatar").fadeIn( "slow" ); 
+    }
      
      // accordion actions
      if($(this).next("div").is(":visible")){
