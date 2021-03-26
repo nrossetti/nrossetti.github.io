@@ -35,13 +35,11 @@ body > div.instructions{
 }
 
 body > div.instructions > p{
-    font-size: 16px;
-    font-size: 2vh;
+    font-size: 1.75vh;
 }
 
 body > div.instructions > p > span{
-    font-size: 20px;
-    font-size: 2.5vh;
+    font-size: 1.75vh;
 }
 
 body > div.container{
@@ -95,3 +93,39 @@ div#scoreboard{
     float: left;
 }
 
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+    body > div.instructions{
+        height: 15vh;
+    }
+
+    body > div.instructions > p{
+        font-size: 2vh;
+        margin-bottom:0;
+    }
+    
+    body > div.instructions > p > span{
+        font-size: 2vh;
+    }    
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}
