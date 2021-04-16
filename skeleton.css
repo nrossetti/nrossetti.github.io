@@ -606,7 +606,7 @@ position:fixed;opacity:0
 /*FILTER STUFF*/
 .filter-label{text-align: center; display:inline-block; line-height:2em; border-radius:.2em;}
 .filter-label:hover{ text-decoration: underline; }
-.filter-text, { margin-right:5em; }
+.filter-text { margin-right:5em; }
 .filter-label { margin:1em}
 .filter-wrap { position:relative; overflow:hidden; margin:0 -0.75% }
 .filter-item { float:left; margin:.5%; text-align:center;}
