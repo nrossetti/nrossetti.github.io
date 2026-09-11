@@ -2,153 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nicholas Rossetti</title>
-  <meta name="description" content="Personal website of Nicholas Rossetti.">
-  <meta name="author" content="Nicholas Rossetti">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="skeleton.css?v={random number/string}">
-
-  <link rel="icon" href="favicon.ico" />
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="main.js"></script>
-
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="The personal site of Nick Rossetti.">
+  <title>Nick Rossetti</title>
+  <link rel="canonical" href="https://nrossetti.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23232323'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='42' fill='white'%3En%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light dark; --background: #fcfcfc; --text: #252525; --muted: #686868; --rule: #e3e3e3; --hover: #244c83; }
+    * { box-sizing: border-box; }
+    html { font-size: 100%; }
+    body { margin: 0; background: var(--background); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    main { width: min(20rem, calc(100% - 3rem)); margin: 0 auto; padding: clamp(6rem, 36svh, 24rem) 0 5rem; }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.625rem; font-weight: 400; line-height: 1.2; letter-spacing: -.04em; }
+    nav { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin-top: .875rem; }
+    a { display: inline-block; padding: .5rem 0; color: var(--muted); font-size: .875rem; line-height: 1.5; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .3em; }
+    a:hover { color: var(--hover); text-decoration-color: currentColor; }
+    a:focus-visible { color: var(--text); outline: 2px solid currentColor; outline-offset: 5px; border-radius: 1px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #191919; --text: #eeeeec; --muted: #ababab; --rule: #363636; --hover: #a9caff; }
+    }
+  </style>
 </head>
-
-
 <body>
-
-<div class="container">
-<div class="row headerContent">
-  <a id="title" href=""><h1>Nicholas Rossetti</h1></a>
-  <div id="socialCont">
-    <a class="socialLink" href="https://www.linkedin.com/in/nicholas-rossetti-569479136/"><img src="linkedin.svg"></a>
-    <a class="socialLink" href="https://twitter.com/nickross__"><img src="twitter.svg"></a>
-    <a class="socialLink" href="https://github.com/nrossetti"><img src="github.svg"></a>
-  </div>
-  <hr>
-</div>
-<div class="row">
-  <ul class="accordion" style="list-style-type: none">
-    <li>
-      <div class="contentHeader"><h2>About</h2></div>
-      <div id="about" class="contentPanel">
-        <p>
-          Hello! I'm a Software Developer in Lancaster County, Pennsylvania with a B.S. in Computer Engineering from Texas Tech University. I enjoy tackling diverse technical challenges and am always eager to expand my skill set.
-        </p>
-        <div id="avatar"></div>
-      </div>
-    </li>
-    <li>
-      <div class="contentHeader"><h2>Skills</h2></div>
-      <div id="skills" class="contentPanel">
-        <span class="filter-text" hidden="true">Filter</span> 
-        <span id="filter-categories">
-          <input type="radio" id="filter-all" class="filter-input" name="filter" checked=""><label for="filter-all" class="filter-label">All</label> 
-          <input type="radio" id="language" class="filter-input" name="filter"><label for="language" class="filter-label">Languages</label> 
-          <input type="radio" id="framework" class="filter-input" name="filter"><label for="framework" class="filter-label">Frameworks</label>
-          <input type="radio" id="frontEnd" class="filter-input" name="filter"><label for="frontEnd" class="filter-label">Front-end</label> 
-          <input type="radio" id="backEnd" class="filter-input" name="filter"><label for="backEnd" class="filter-label">Back-end</label> 
-          <input type="radio" id="hardware" class="filter-input" name="filter"><label for="hardware" class="filter-label">Hardware</label>
-          <input type="radio" id="tool" class="filter-input" name="filter"><label for="tool" class="filter-label">Tools</label>
-          <input type="radio" id="other" class="filter-input" name="filter"><label for="other" class="filter-label">Other</label> 
-        </span>
-        <div class="filter-wrap filtered">
-          <div class="filter-item selected"></div>
-          <div class="filter-item language"><b>C</b></div>
-          <div class="filter-item language"><b>C++</b></div>
-          <div class="filter-item language"><b>Perl</b></div>
-          <div class="filter-item backEnd"><b>MySql</b></div>
-          <div class="filter-item frontEnd"><b>HTML</b></div>
-          <div class="filter-item language"><b>JavaScript</b></div>
-          <div class="filter-item backEnd"><b>Node.js</b></div>
-          <div class="filter-item backEnd"><b>Express</b></div>
-          <div class="filter-item framework"><b>React</b></div>
-          <div class="filter-item frontEnd"><b>Material UI</b></div>
-          <div class="filter-item frontEnd"><b>CSS</b></div>
-          <div class="filter-item language"><b>Python</b></div>
-          <div class="filter-item language"><b>Powershell</b></div>
-          <div class="filter-item language"><b>Verilog</b></div>
-          <div class="filter-item tool"><b>git</b></div>
-          <div class="filter-item tool"><b>Perforce</b></div>
-          <div class="filter-item tool"><b>EagleCAD</b></div>
-          <div class="filter-item tool"><b>LTspice</b></div>
-          <div class="filter-item other"><b>Windows</b></div>
-          <div class="filter-item other"><b>Linux</b></div>
-          <div class="filter-item other"><b>Object Oriented Programing</b></div>
-          <div class="filter-item other"><b>Scrum Agile Methodology</b></div>
-          <div class="filter-item other"><b>SDLC</b></div>
-          <div class="filter-item other"><b>Waterfall Methodology</b></div>
-          <div class="filter-item other"><b>Unit Testing</b></div>
-          <div class="filter-item framework"><b>Bootstrap</b></div>
-          <div class="filter-item hardware"><b>PCB Design/Assembly/Testing</b></div>
-          <div class="filter-item hardware"><b>Circuit Analysis</b></div>
-          <div class="filter-item hardware"><b>Circuit Simulation</b></div>
-          <div id="filter-mask" class=""></div> <!-- mask is last -->
-        </div>
-    </li>  
-     <li>
-      <div class="contentHeader"><h2>Projects</h2></div>
-      <div id="portfolio" class="contentPanel">
-        <container class="u-full-width" style="text-align: center;">
-          <div class="portDIV">
-            <span style="font-size: 12pt;">Below are a few examples of web apps and embedded projects I have worked on in my spare time.</span>
-            <br>
-            <ul>  
-              <li>
-                <a href="https://github.com/nrossetti/movie-time" class="projectLink">
-                  <div>Movie-Time: A web app that provides movie recommendations based on user preferences.</div>                  </a>
-              </li>
-              <li>
-                <a href="https://github.com/nrossetti/StatusLight" class="projectLink">
-                  <div>Status Light: An embedded project consisting of an LED cube that changes color based on the user's Skype status.</div>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/nrossetti/nrossetti.github.io" class="projectLink">
-                  <div>Snake Clone: A clone of the classic mobile phone game 'Snake', made with JavaScript and HTML5 canvas.</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </container>
-      </div>
-    </li>
-    <li>
-      <div class="contentHeader"><a href="./jekyll-blog"><h2>Blog</h2></a></div>
-      <div id="contact" class="contentPanel">
-      </div>
-      </li>
-    </li>
-    <li>
-      <div class="contentHeader"><h2>Contact</h2></div>
-      <div id="contact" class="contentPanel">
-            <form action="https://formspree.io/nicholasjrossetti@gmail.com" method="POST">
-              <label for="exampleEmailInput">Your email</label>
-              <input class="u-full-width" type="email" placeholder="user@domain.com" name="replyto">
-
-              <label for="exampleEmailInput">Subject</label>
-              <input class="u-full-width" type="text" placeholder="hello world!" name="subject">
-
-              <label for="exampleMessage">Message</label>
-              <textarea class="u-full-width" placeholder="01100101 01100001 01110011 01110100 01100101 01110010 00100000 01100101 01100111 01100111 0001010" name="message"></textarea>
-
-              <input type="hidden" name="_next" value="//nrossetti.com/#"/>
-              <input type="text" name="_gotcha" style="display:none" />
-
-              <input class="button-primary" type="submit" value="Submit">
-          </div>
-      </div>
-
-    </li>
-  </ul>
-</div> <!--row--> 
-
-</div><!-- content container -->
-
+  <main>
+    <h1>Nick Rossetti</h1>
+    <nav aria-label="Contact and profiles">
+      <a href="mailto:nicholasjrossetti@gmail.com">Email</a>
+      <a href="https://github.com/nrossetti">GitHub</a>
+      <a href="https://www.linkedin.com/in/nicholas-rossetti-569479136/">LinkedIn</a>
+    </nav>
+  </main>
 </body>
 </html>
